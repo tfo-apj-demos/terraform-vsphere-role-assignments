@@ -1,11 +1,3 @@
-data "vsphere_role" "role1" {
-  label = "Administrator"
-}
-
-output "ds_consumer" {
-  value = data.vsphere_role.role1
-}
-
 # --- Datacenter Permissions
 data "vsphere_datacenter" "this" {
   name = "Datacenter"
