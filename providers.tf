@@ -5,4 +5,10 @@ terraform {
       version = "2.6.1"
     }
   }
+  cloud {
+    organization = "tfo-apj-demos"
+    workspaces {
+      name = "vsphere-role-assignments"
+    }
+  }
 }
